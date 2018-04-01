@@ -1,0 +1,222 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    width:100%;
+    height:200px;
+    background-image:url(http://themes.dtbaker.net/html-bundles/watercolor/beautiful-watercolor/html/assets/image/theme/header-bg4-sml-flowers.png);
+}
+.logo{
+    padding-left: 42%;
+    padding-top: 8%;
+    color:#008080; 
+    font-family: 'Trocchi', serif; 
+    font-size: 70px; 
+    font-weight: normal; 
+    line-height: 48px; 
+    margin: 0;
+}
+.productList{
+    width:65%;
+    border: 1px solid lightblue ;
+    float: left;
+    padding: 25px;
+}
+.cart{
+    width:30%;
+    height:200px;
+    float:right;
+}
+
+.innerCart{
+    width:69%;
+    height: 100%;;
+    border: 1px solid lightblue;
+    float: left;
+    overflow: scroll;
+}
+
+.totalPrice{
+    width:30%;
+    height: 100%;;
+    border: 1px solid lightblue;
+    float: left;
+}
+
+#price{
+    font-size: 18pt;
+    color: cadetblue;
+    padding: 20px;
+    float:right;
+}
+
+#select{
+    font-size: 15pt;
+    color:darkblue;
+
+}
+
+.product{
+    width:350px;
+    background-color: azure;
+    padding: 25px;
+    margin: 10px;
+    float: left;
+}
+
+.product p {
+    font-family:sans-serif;
+}
+.product img {
+    max-width: 100%;
+}
+
+.prices{
+    font-size: 16pt;
+    color: green;
+}
+
+button {
+	background-color:#44c767;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:9px 16px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2f6627;
+}
+button:hover {
+	background-color:#5cbf2a;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+.login-body {
+  background-image: url(http://www.wallpapers4u.org/wp-content/uploads/bird_nature_minimalism_flight_flowers_69267_1920x1080.jpg);
+    background-size:cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #28d;
+}
+
+.login-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+.ml1 {
+  font-weight: 900;
+  font-size: 3.0em;
+}
+
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+  position:relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-left: 140px;;
+  padding-bottom: 0.15em;
+    color:cadetblue; 
+    background-color: white;
+}
+
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 0 0;
+}
+
+.ml1 .line1 { top: 0; }
+.ml1 .line2 { bottom: 0; }

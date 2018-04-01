@@ -1,0 +1,65 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>           
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="logo">Ivan Horin's Bouqet Store</h1>
+        </div>
+        <div class="cart">
+            <div class="innerCart"><p id="select">Selected Bouqets:</p></div>
+            <div class="totalPrice"><p id="price">Total Price: 0$</p></div>
+        </div>
+        <div class="productList">
+        <div class="product">
+            <img src="https://www.ftdimg.com/pics/products/zoom/SMRB_600x600.jpg">
+            <h3><i>Spring Dream</i></h3>
+            <p id="desc"><i>    Picked fresh from the farm to offer your special recipient a bouquet that brings brilliant color to any of life's special occasions, our Long Stemmed Mixed Rose Bouquet will delight your special recipient with each fragrant bloom. </i></p>
+            <p class="prices" data_value="20">20$</p>
+            <button id="b1"> Add to Cart</button>           
+        </div>
+       <div class="product">
+            <img src="https://www.ftdimg.com/pics/products/zoom/CDBD_600x600.jpg">
+           <h3><i>White Mystery</i></h3>
+            <p id="desc"><i>   Bouquet is a wonderful way to send peaceful wishes to your special recipient. Bringing together gorgeous white Asiatic Lilies, white roses and white mini carnations accented with blue statice, cream spray roses, and lush greens, this stunning bouquet captivates at every turn. </i></p>
+            <p class="prices" data_value="35">35$</p>
+            <button id="b2">Add to Cart</button>           
+        </div>
+        <div class="product">
+            <img src="https://www.ftdimg.com/pics/products/zoom/E2-4305D_600x600.jpg">
+            <h3><i>Lady in Red</i></h3>
+            <p id="desc"><i>   Bouquet offers comfort and sympathy in the time of grief and loss. Bright white roses and Peruvian lilies are accented by lush greens and gorgeously arranged in a clear glass gathering vase to create a bouquet that will bring peace and show how much you care.</i></p>
+            <p class="prices" data_value="40">40$</p>
+            <button id="b">Add to Cart</button>      
+        </div>
+            <div class="product">
+            <img src="https://www.ftdimg.com/pics/products/zoom/SC-8957S_600x600.jpg">
+           <h3><i>Rays of Autumn</i></h3>
+            <p id="desc"><i>   Bouquet is a cheerful burst of color to extend your deepest sympathies. Crème de la Crème roses, orange gerbera daisies, purple lisianthus, green button poms and a mix of vibrant greens are beautifully arranged in a clear glass.</i></p>
+            <p class="prices" data_value="31">31$</p>
+            <button id="b2">Add to Cart</button>           
+        </div>
+        </div>
+        <script>
+            var i=1;
+            var fullPrice=0;
+            var price=0;
+            var bouqetName="";
+            var cart="";
+            
+            $("button").click(function(){
+                price = parseInt($(this).closest('div').children('.prices').attr("data_value"));
+                bouqetName=$(this).closest('div').children('h3').text();
+                fullPrice=fullPrice+price;
+                cart=""+cart+"<br \/>"+i+"."+bouqetName+" - "+price+"$";
+                i++;
+                document.getElementById("price").innerHTML="Total price:\n"+fullPrice+"$";
+                document.getElementById("select").innerHTML="Selected Items: "+cart;
+            });
+        </script>
+            
+    </body>
+</html>

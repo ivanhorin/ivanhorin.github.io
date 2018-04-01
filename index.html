@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>WELCOME TO FLOWER'S SHOP!</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body class='login-body'>
+
+  <div class="login">
+  <div class="login-triangle"></div>
+  
+  <h2 class="login-header">Log in</h2>
+
+  <form action="main.html" class="login-container">
+    <p><input type="email" placeholder="Email"></p>
+    <p><input type="password" placeholder="Password"></p>
+    <p><input type="submit" value="Log in"></p>
+  </form>
+      <br>
+      <br>     
+<link href="https://fonts.googleapis.com/css?family=Imprima" rel="stylesheet">
+</div>
+<h1 class="ml1">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">Welcome to Ivan Horin's Flowers Shop.</span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+    <script>
+   $('.ml7 .letters').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml7 .letter',
+    translateY: ["1.1em", 0],
+    translateX: ["0.55em", 0],
+    translateZ: 0,
+    rotateZ: [180, 0],
+    duration: 750,
+    easing: "easeOutExpo",
+    delay: function(el, i) {
+      return 50 * i;
+    }
+  }).add({
+    targets: '.ml7',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+        </script>
+</body>
+
+</html>
